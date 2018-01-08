@@ -1,0 +1,17 @@
+# Bind prefix to Ctrl-]
+escape ^]^]
+
+# Turn off welcome message
+startup_message off
+
+# Use 256 color
+term screen-256color
+
+# Status bar
+hardstatus alwayslastline "%{gk} %S %{.kW} %-w%{+bs .kR}%n %f%t%{-}%+w %= %{gk} %{wk}%d/%m/%Y %c"
+
+# Turn on alternative screen
+altscreen on
+
+# Bind key
+bind R source "~/.screenrc"

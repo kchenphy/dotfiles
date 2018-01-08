@@ -7,7 +7,8 @@
 - link:
     ~/.dotfiles: ''
     ~/.ssh/config: ssh/config
-
+    ~/.screenrc: screen/screenrc
+    
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [cp dotbot/tools/git-submodule/install . , Copy install to local directory]
