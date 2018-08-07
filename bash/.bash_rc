@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# load all scripts under .bash.d
+for script in .bash.d/*.sh; do
+    [ -e "$script" ] || continue
+    source $script
+done
+unset $script
