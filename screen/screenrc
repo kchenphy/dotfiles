@@ -15,3 +15,6 @@ altscreen on
 
 # Bind key
 bind R source "~/.screenrc"
+
+# Start the shell as a login shell, so that .bashrc will be effective
+shell -$SHELL
