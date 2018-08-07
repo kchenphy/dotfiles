@@ -8,6 +8,7 @@
     ~/.dotfiles: ''
     ~/.ssh/config: ssh/config
     ~/.screenrc: screen/screenrc
+    ~/.gitconfig: git/gitconfig
     
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
