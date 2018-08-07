@@ -9,6 +9,8 @@
     ~/.ssh/config: ssh/config
     ~/.screenrc: screen/screenrc
     ~/.gitconfig: git/gitconfig
+    ~/.bash_rc: bash/bash_rc
+    ~/.bash_profile: bash/bash_profile
     
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
