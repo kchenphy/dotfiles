@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
 
-oldstate=$(set +o)
-set -euo pipefail
-
 # load all scripts under .bash.d
 for script in .bash.d/*.sh; do
     [ -e "$script" ] || continue
     source "$script"
 done
-unset "$script"
+unset "$script" || true
 
-eval "$oldstate"
-unset oldstate
