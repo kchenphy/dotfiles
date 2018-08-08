@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 # load all scripts under .bash.d
+shopt -s nullglob
 for script in .bash.d/*.sh; do
-    [ -e "$script" ] || continue
     source "$script"
 done
 unset "$script" || true
-
