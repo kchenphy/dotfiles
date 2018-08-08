@@ -11,6 +11,7 @@
     ~/.gitconfig: git/gitconfig
     ~/.bash_rc: bash/bash_rc
     ~/.bash_profile: bash/bash_profile
+    ~/.bash.d: bash/bash.d
     
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
