@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
-
 current_script_dir() {
     ( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 }
