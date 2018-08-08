@@ -5,4 +5,4 @@ shopt -s nullglob
 for script in ~/.bash.d/*.sh; do
     source "$script"
 done
-unset "$script" || true
+unset -v script
