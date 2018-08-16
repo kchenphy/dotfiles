@@ -5,4 +5,9 @@ shopt -s nullglob
 for script in ~/.bash.d/*.sh; do
     source "$script"
 done
+
+for script in ~/.bash.d_local/*.sh; do
+    source "$script"
+done    
+    
 unset -v script
