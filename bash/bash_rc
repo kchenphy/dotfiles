@@ -6,6 +6,7 @@ for script in ~/.bash.d/*.sh; do
     source "$script"
 done
 
+# load all scripts under .bash.d.local
 for script in ~/.bash.d_local/*.sh; do
     source "$script"
 done    
