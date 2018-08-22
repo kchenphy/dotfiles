@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
 
+if [ -f /etc/bashrc ]; then
+  source /etc/bashrc
+fi
+
 # load all scripts under .bash.d
 shopt -s nullglob
 for script in ~/.bash.d/*.sh; do
-    source "$script"
+  source "$script"
 done
 
 # load all scripts under .bash.d.local
 for script in ~/.bash.d_local/*.sh; do
-    source "$script"
+  source "$script"
 done    
-    
+
 unset -v script
