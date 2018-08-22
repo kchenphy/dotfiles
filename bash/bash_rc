@@ -16,3 +16,4 @@ for script in ~/.bash.d_local/*.sh; do
 done    
 
 unset -v script
+shopt -u nullglob
