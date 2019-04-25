@@ -6,11 +6,14 @@ fi
 
 # load all scripts under .bash.d
 shopt -s nullglob
+
+# shellcheck source=/dev/null
 for script in ~/.bash.d/*.sh; do
   source "$script"
 done
 
 # load all scripts under .bash.d.local
+# shellcheck source=/dev/null
 for script in ~/.bash.d_local/*.sh; do
   source "$script"
 done    
