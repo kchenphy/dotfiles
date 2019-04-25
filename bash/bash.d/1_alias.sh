@@ -7,13 +7,12 @@ pail_cat() {
 
 get_yarn_logs() {
     check_num_args 1 "$@"
-    local -r appId="$1"
-    yarn logs -applicationId "$appId" > "$appId".log
+    local -r app_id="$1"
+    yarn logs -applicationId "$app_id" > "$app_id".log
 }
 
 alias hdfs_delete_now="hdfs dfs -rm -r -skipTrash"
 
 grep_exception() {
-    local -r logFile="$1"
-    grep -i Exception ${logFile} | sort | uniq 
+    grep -i Exception "$1" | sort | uniq 
 }
