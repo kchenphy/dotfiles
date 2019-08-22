@@ -8,7 +8,7 @@ startup_message off
 term screen-256color
 
 # Status bar
-hardstatus alwayslastline "%{gk} %S %{.kW} %-w%{+bs .kR}%n %f%t%{-}%+w %= %{gk} %{wk}%d/%m/%Y %c"
+hardstatus alwayslastline "%{gk} %S %{.kW} %-w%{+bs .kR}%n %f%t%{-}%+w %= %{gk} %{wk}%m/%d/%Y %c"
 
 # Turn on alternative screen
 altscreen on
@@ -18,3 +18,6 @@ bind R source "~/.screenrc"
 
 # Start the shell as a login shell, so that .bashrc will be effective
 shell -$SHELL
+
+# Large sxcroll back
+defscrollback 100000 
