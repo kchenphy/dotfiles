@@ -19,5 +19,8 @@ bind R source "~/.screenrc"
 # Start the shell as a login shell, so that .bashrc will be effective
 shell -$SHELL
 
-# Large sxcroll back
-defscrollback 100000 
+# Large scroll back
+defscrollback 100000
+
+# Scroll with mouse
+termcapinfo xterm* ti@:te@
